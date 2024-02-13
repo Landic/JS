@@ -1,33 +1,33 @@
 function Task1() {
-    let questions = {'Столица Украины Одесса': 'нет','Столица Польши Варшава': 'да','5 + 5 = 10': 'да','Пицца итальянское блюдо': 'да','7+7=14': 'да','15+15=31': 'нет','(2+2)*2=8': 'да' }
-    let answers = []
-    let result = 0;
-    alert('Ответы только Да или Нет')
-    for (j in questions) {
-        while (true) {
-            let answer = prompt(j)
-            try{
-                answer = answer.toLowerCase()
-                if (answer == '') {
-                    throw "Ошибка";
+    let questions = ['Столица Украины Одесса','Столица Польши Варшава','5 + 5 = 10','Пицца итальянское блюдо','7+7=14','15+15=31','(2+2)*2=8'];
+    let trueAnswer = ['нет','да','да','да','да', 'нет','да'];
+    let answer = [];
+    let totalscore = 0;
+    alert('Ответы только да или нет');
+    for(i of questions){
+        while(true){
+            var answ = prompt(i);
+            if (answ && (answ.toLowerCase() === 'да' || answ.toLowerCase() === 'нет')) 
+            {
+                answ = answ.toLowerCase();
+                if(answ == ''){
+                    continue;
                 }
-                answers.push(answer)
+                answer.push(answ);
                 break;
-            }
-            catch {
-                alert('Ответы только Да или Нет')
+            } 
+            else {
+                alert("Введите 'Да' или 'Нет'.");
             }
         }
     }
-    let i = 0;
-    for (j in questions) {
-        if (questions[j] == answers[i]) {
-            result++;
+    for(let i = 0; i < trueAnswer.length; i++){
+        if(trueAnswer[i] === answer[i]){
+            totalscore++;
         }
-        i++;
     }
-
-    alert(`Ваш результат: ${result/7*100}%`)
+    let score = (totalscore / questions.length) * 100;
+    alert(`Результат -> ${score}`);
 }
 
 
