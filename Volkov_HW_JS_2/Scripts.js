@@ -67,11 +67,7 @@ function Task3() {
     const path = stratifiedURL.pathname;
     const file = path.split('/').pop();
     const queryString = stratifiedURL.search;
-    alert(`Протокол: ${prot}
-Хост: ${host}
-Путь: ${path}
-Имя файла: ${file}
-Строка запроса: ${queryString}`)
+    alert(`Протокол: ${prot}\nХост: ${host}\nПуть: ${path}\nИмя файла: ${file}\nСтрока запроса: ${queryString}`)
 }
 
 function Task4() {
