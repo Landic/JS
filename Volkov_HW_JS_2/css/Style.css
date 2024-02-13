@@ -1,0 +1,27 @@
+*{margin: 0; padding: 0;}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box .butt{
+    width: 20%;
+    height: 60px;
+    margin: auto;
+    border: none;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.box .butt:hover{
+    background-color: rgb(95, 95, 95);
+    transition: 0.5s;
+}
+
+.box .butt:active{
+    background-color: rgb(65, 65, 65);
+    transition: 0.1s;
+}
