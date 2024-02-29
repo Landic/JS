@@ -1,0 +1,13 @@
+table {
+    width: 350px;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+  }
+  
+  th {
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 5px; /* Added padding for better look */
+  }
+  
