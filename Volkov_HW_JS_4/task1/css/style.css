@@ -1,0 +1,11 @@
+@keyframes bold{
+    from{font-weight:300;}
+    to{font-weight:bold;}
+}
+.bold{animation:.15s bold forwards;}
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+li:hover {-weight: bold;}
+.collapsed {display: none;}

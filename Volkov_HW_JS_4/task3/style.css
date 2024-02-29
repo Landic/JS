@@ -1,0 +1,18 @@
+.box{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    resize: both;
+    position: relative;
+}
+
+.box .triangle{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid black;
+    position:absolute;
+    bottom:0;
+    right:0;
+}

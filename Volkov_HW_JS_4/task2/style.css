@@ -1,0 +1,9 @@
+
+.list li {
+    color: black;
+    cursor: pointer;
+    height: 20px;
+}
+.selected {
+    background-color:#ffab58; 
+}

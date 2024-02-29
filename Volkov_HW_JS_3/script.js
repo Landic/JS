@@ -51,4 +51,9 @@ function Task1(){
     SetInitialImages();
 }
 
-Task1();
+function Task2(){
+
+}
+Task2();
+// Task1();
+
