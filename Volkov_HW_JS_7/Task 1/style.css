@@ -1,0 +1,54 @@
+*{margin: 0; padding: 0;}
+h4{
+    margin: 20px;
+}
+
+.register 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+}
+ 
+.register div input
+{
+    padding: 5px;
+}
+
+.register div input[type="radio"]{
+    margin-right: 7px;
+}
+
+.register div input[type="radio"]:nth-child(3){
+    margin-left: 20px;
+
+}
+
+.register div{
+    margin-bottom: 15px;
+}
+
+.register div label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.register div input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.register div input[type="button"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+  }

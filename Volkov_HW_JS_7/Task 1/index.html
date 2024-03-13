@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Регистрация</h4>
+    <form id="registr" class="register">
+        <div>
+            <label>Логин:</label>
+            <input type="text" name="" id="login">
+        </div>
+        <div>
+            <label>Пароль:</label>
+            <input type="password" name="" id="passw">
+        </div>
+        <div>
+            <label>Подтверждение:</label>
+            <input type="password" name="" id="confpassw">
+        </div>
+        <div>
+            <label>Полное имя:</label>
+            <input type="text" name="" id="fullname">
+        </div>
+        <div>
+            <label>Пол:</label>
+            <input type="radio" name="gender" id="male" value="M">М
+            <input type="radio" name="gender" id="female" value="Ж">Ж
+        </div>
+        <div>
+            <label for="">Специализация:</label>
+            <input type="checkbox" name="specialization" id="" value="Дизайн">Дизайн
+            <input type="checkbox" name="specialization" id="" value="Программирование">Программирование
+            <input type="checkbox" name="specialization" id="" value="Администрирование">Администрирование
+        </div>
+        <div>
+            <label>Должность:</label>
+            <select id="jobTitle">
+                <option value="">-----Выберите-----</option>
+                <option value="1">Директор</option>
+                <option value="2">Заместитель директора</option>
+                <option value="3">Руководитель проекта</option>
+                <option value="4">Начальник отдела</option>
+                <option value="5">Программист</option>
+                <option value="6">Дизайнер</option>
+                <option value="7">Консультант</option>
+                <option value="8">Служащий</option>
+            </select>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="Регистрация">
+            <input type="reset" value="Сброс">
+        </div>
+    </form>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
