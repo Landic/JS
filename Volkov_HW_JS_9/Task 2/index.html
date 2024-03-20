@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-box .butt-box{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+    }
+</style>
+<body>
+    <div class="main-box">
+        <input type="date" id="dateInput">
+        <div class="butt-box">
+            <button id="showDateText">Показать дату текстом</button>
+            <button id="checkPast">Проверить прошедшая дата?</button>
+            <button id="checkLeapYear">Проверить високосный год?</button>
+            <button id="showNextDate">Получить следующую дату</button>
+        </div>
+    </div>
+    <div id="output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
